@@ -1,0 +1,293 @@
+<!--Daksh Patel and Student Id: 991547214-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 2 For Daksh Patel</title>
+</head>
+<body>
+	<h1 align="center" style="font-family: verdana;size: 30px;background-color: grey;color: white;">Assignment 2</h1>
+	
+	<h1 align="center" style="font-family: verdana;size: 30px;">Daksh Patel</h1>
+	<h1 align="center" style="font-family: verdana;size: 30px;">Student Id:991547214</h1>
+	<h1 align="center" style="font-family: verdana;size: 30px;
+	background-color: grey;color: white;">Instructor : Sukhbhir Singh Tatla</h1>
+	<h1 align="center" style="font-family: verdana;size: 30px;"> Game Instructions</h1>
+	<p style="font-family: verdana; color: grey">This is a small game where people can choose any of the rock , paper or Scissor and similar way computer generate or chooses rock , paper or scissor , now there are certain rules like rock crushes scissor ,
+	paper crushes rock and scissor crushes paper. If your choosed item destroys the computer's selected item you win , but if computer wins you lose</p>
+	<hr style="color: orange">
+
+	<button onclick="game()" align="center">PLAY</button>
+	<p style="font-family: verdana; color: grey" >Click on the Play button to play the Rock paper Scissor with Computer</p>
+
+	<script type="text/javascript">
+		var userwin = 0;
+		var computerwin = 0;
+		function game() {
+			
+    var selectmove = prompt("Press 1 for ROCK\nPress 2 for PAPER\nPress 3 for SCISSOR");
+    //if user selects the Rock
+    if(selectmove === "1")
+    {
+        var random = Math.floor(Math.random() * 3) + 1;
+        if (random === 1)
+        {
+            userwin++;
+            if(computerwin !== 0)
+            {
+                computerwin--;
+            }
+            alert("You picked ROCK.Computer picked SCISSOR.\nHurray ! You Won.\nYou: "+userwin+"\nComputer: "+computerwin);
+            //Confirm Dialogue box to play again
+            var again = confirm("Do you want to play again? ");
+            if(again)
+            {
+                game();
+            }
+            else
+            {
+                if(userwin > computerwin)
+                alert("Final score Results :\nYou: "+userwin+"\nComputer: "+computerwin+"\n Congrats! You win!!");
+                if(computerwin > userwin)
+                 alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nSorry!! :( You loss!!"); 
+                 if(computerwin === userwin)
+                 {
+                     alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nIts a tie!!");
+                 }
+                
+            }
+        }
+        //if computer gets paper
+        if (random === 2)
+        {
+            if(userwin !== 0)
+            {
+               userwin--; 
+            }
+            computerwin++;
+            
+            alert("You picked ROCK.Computer picked Paper.\nYou :( loss.\nYou: "+userwin+"\nComputer: "+computerwin);
+
+            var again = confirm("Do you want to play again? ");
+            if(again)
+            {
+                game();
+            }
+            else
+            {
+                if(userwin > computerwin)
+                alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nYou win!!");
+                if(computerwin > userwin)
+                 alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nYou loss!!"); 
+                 if(computerwin === userwin)
+                 {
+                     alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nIts a tie!!");
+                 }
+                
+            }
+            
+        }
+        //if the computer gets rock
+        if (random === 3)
+        {
+            
+            
+            alert("You picked ROCK.Computer picked rock.\ngame tie.\nYou: "+userwin+"\nComputer: "+computerwin);
+            var again = confirm("Do you want to play again? ");
+            if(again)
+            {
+                game();
+            }
+            else
+            {
+                if(userwin > computerwin)
+                alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nYou win!!");
+                if(computerwin > userwin)
+                 alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nYou loss!!"); 
+                 if(computerwin === userwin)
+                 {
+                     alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nIts a tie!!");
+                 }
+                
+            }
+        }
+
+        
+    }
+    //if user selects the Paper
+    if(selectmove === "2")
+    {
+        var random = Math.floor(Math.random() * 3) + 1;
+        //if the computer selects the Scissor
+        if (random === 1)
+        {
+            if(userwin !== 0)
+            {
+               userwin--; 
+            }
+            computerwin++;
+            alert("You picked Paper.Computer picked SCISSOR.\nYou loss.\nYou: "+userwin+"\nComputer: "+computerwin);
+            var again = confirm("Do you want to play again? ");
+            if(again)
+            {
+                game();
+            }
+            else
+            {
+                if(userwin > computerwin)
+                alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nYou win!!");
+                if(computerwin > userwin)
+                 alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nYou loss!!"); 
+                 if(computerwin === userwin)
+                 {
+                     alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nIts a tie!!");
+                 }
+                
+            }
+        }
+        //if the computer selects paper
+        if (random === 2)
+        {
+         
+            
+            alert("You picked paper.Computer picked Paper.\ngame tie.\nYou: "+userwin+"\nComputer: "+computerwin);
+            var again = confirm("Do you want to play again? ");
+            if(again)
+            {
+                game();
+            }
+            else
+            {
+                if(userwin > computerwin)
+                alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nYou win!!");
+                if(computerwin > userwin)
+                 alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nYou loss!!"); 
+                 if(computerwin === userwin)
+                 {
+                     alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nIts a tie!!");
+                 }
+                
+            }
+        }
+        //if the computer gets Rock
+        if (random === 3)
+        {
+            
+            userwin++;
+            if(computerwin !== 0)
+            {
+                computerwin--;
+            }
+            alert("You picked paper.Computer picked rock.\nyou win.\nYou: "+userwin+"\nComputer: "+computerwin);
+            var again = confirm("Do you want to play again? ");
+            if(again)
+            {
+                game();
+            }
+            else
+            {
+                if(userwin > computerwin)
+                alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nYou win!!");
+                if(computerwin > userwin)
+                 alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nYou loss!!"); 
+                 if(computerwin === userwin)
+                 {
+                     alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nIts a tie!!");
+                 }
+                
+            }
+        }
+    }
+
+    // if the user selects the Scissor
+     if(selectmove === "3")
+    {
+        var random = Math.floor(Math.random() * 3) + 1;
+        //if the computer gets the Scissor
+        if (random === 1)
+        {
+            
+            alert("You picked Scissor.Computer picked SCISSOR.\ngame tie.\nYou: "+userwin+"\nComputer: "+computerwin);
+            var again = confirm("Do you want to play again? ");
+            if(again)
+            {
+                game();
+            }
+            else
+            {
+                if(userwin > computerwin)
+                alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nYou win!!");
+                if(computerwin > userwin)
+                 alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nYou loss!!"); 
+                 if(computerwin === userwin)
+                 {
+                     alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nIts a tie!!");
+                 }
+                
+            }
+        }
+        //if the computer selects paper
+        if (random === 2)
+        {
+            
+            userwin++;
+            if(computerwin !== 0)
+            {
+                computerwin--;
+            }
+            alert("You picked scissor.Computer picked Paper.\nYou win.\nYou: "+userwin+"\nComputer: "+computerwin);
+            var again = confirm("Do you want to play again? ");
+            if(again)
+            {
+                game();
+            }
+            else
+            {
+                if(userwin > computerwin)
+                alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nYou win!!");
+                if(computerwin > userwin)
+                 alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nYou loss!!"); 
+                 if(computerwin === userwin)
+                 {
+                     alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nIts a tie!!");
+                 }
+                
+            }
+        }
+        //if the computer selects rock
+        if (random === 3)
+        {
+            if(userwin !== 0)
+            {
+               userwin--; 
+            }
+            computerwin++;
+            
+            alert("You picked scissor.Computer picked rock.\nyou loss.\nYou: "+userwin+"\nComputer: "+computerwin);
+            var again = confirm("Do you want to play again? ");
+            if(again)
+            {
+                game();
+            }
+            else
+            {
+                if(userwin > computerwin)
+                alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nYou win!!");
+                if(computerwin > userwin)
+                 alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nYou loss!!"); 
+                 if(computerwin === userwin)
+                 {
+                     alert("Final score:\nYou: "+userwin+"\nComputer: "+computerwin+"\nIts a tie!!");
+                 }
+                
+            }
+        }     
+    }
+    else{
+    	game();
+
+    }
+}
+
+	</script>
+</body>
+</html>
