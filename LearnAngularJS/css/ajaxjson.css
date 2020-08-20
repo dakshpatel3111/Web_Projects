@@ -1,0 +1,29 @@
+
+.Grid-Container{
+    display: grid;
+    grid-template-areas:
+    'nav program'
+    'nav program '
+    'nav program';
+  grid-gap: 10px;
+  grid-template-columns: 140px auto;
+ padding: 10px;
+}
+
+.programdisplay{
+    grid-area: program;
+    height:auto;
+    border: grey 1px;
+    border-style: solid;
+      
+}
+
+.nav{
+    grid-area: nav;
+    height: 200px;
+    
+}
+img{
+    border: grey 1px;
+    border-style: solid;
+}

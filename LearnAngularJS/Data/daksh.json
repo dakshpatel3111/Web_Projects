@@ -1,0 +1,52 @@
+{
+    
+    "LocalStorage":{
+        "name":"Local Storage",
+         "Advantages":"LocalStorage and be accessed by Get and set Methods and It also Works Offline",
+         "Disadvantages":"User can directly access the Localstorage saved on his Pc so we can not add important Data",
+         "Program1":"../Programs/LocalStorage/lsindex.jpg",
+         "Program2":"../Programs/LocalStorage/lssavejs.jpg",
+         "Program3":"../Programs/LocalStorage/lsgetjs.jpg",
+         "Output1":"../Programs/LocalStorage/output1.jpg",
+         "Output2":"../Programs/LocalStorage/output2.jpg",
+         "Explain1": "In the First Figure 1.1 of Index file , We have Created two input boxes and Two Submit buttons  with Simple HTML attributes,<br> To use the Form elements Id and Classes should be added  ",
+         "Explain2":"Now to access all the form elements in the Index file we have used <i><b>Jquery Click</b></i> event to get the values when the button is clicked ,<br> once the button is clicked a function is Executed , In this Funtion we use <i><br><b>localStorage.set('name',var)</b><br></i> Method to Save the Variables We want to the Storage,<br> For that we need to give two parameters as shown in Fig 1.2 One Parameter is of Name of the Element you want to give while storing <br>and the second one is the variable name of the element to store",
+         "Explain3":"Once the Value is Saved we can get the value with <br><b><i>localStorage.get('name')</i></b><br> method , Store the Variables with names respectively and once the Program is executed we can obtain this values and can display it on Console or Html,<br> In this Case we have displayed the Plucked the Values from LocalStorage and put it into the Jquery HTML click event",
+         "info":"LocalStorage is Allows the User to save the Values and data from the website into their Dekstop <br>Local Storage is not Session Based it is permanent storage until the browser or website modifies or changes it <br> <h4><i><b> Click on the left Panel to Navigate through the Program,Outputs and Explaination</b></i></h4> "
+        
+        },
+    "Jquery":{
+        "name":"Jquery Click-Event",
+        "Advantages":"Jquery Click is very useful and can save lot of programming then in Javascript where we have to use 'document.getelementbyId'",
+        "Disadvantages":"The Import library is too big for Jquery and also Its DOM and syntaxes can make new JavaScript programmers hard to understand ",
+        "Program":"../Programs/Jquery/Jqclick.jpg",
+        "Output":"../Programs/Jquery/output.jpg",
+        "Explain1":"To Use Jquery we need to Import the JQuery file or we can Use the Following link for the Jquery File and we can import it in Script tag :<b>https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js</b>",
+        "Explain2":"<i><b>$('Selector').click(function(){});</i></b><br>This is the Syntax of Jquery when the button's click event is triggered  a function is executed , As shown in the <b>figure 2.1</b> Jquery click event ,  <br>Here the selector is the  <i>Id or class</i> of the Button or any element that is about to click ,for this case we have Used <b>('#letEx')</b> this is the Id of the Button ,after that we use the .click syntax after which we create the function in which we can write the snippet of the Javscrpit which we want to perform on click event in this case we are simply printing each character of the string located in the Str variable as Shown in Fig 2.1 and the Output will have all the character printed one by one as shown in the output section and fig 2.2",
+        "Explain3":"When the Button with <b>ID = letEx </b> is clicked the Console log has following output javascript executes the function which is written inside the Click event",
+        "info":"Jquery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers <br> Here we will Learn about how to use the Click event for button when the button is clicked <br><h4><i><b> Click on the left Panel to Navigate through the Program,Outputs and Explaination</b></i></h4>"
+                  
+    },
+    "AJAXJSON":{
+        "name":"AJAX and JSON",
+        "Advantages":"Ajax is very fast and Can reduce traffic between the User and client.You can use <b>JSON (JavaScript Object Notation)</b> which is alternative to XML.<br> JSON is key value pair and works like an array.",
+         "Disadvantages":"It can increase design and development time <br>More complex than building classic web application <br>Security is less in AJAX application as all files are downloaded at client side.",
+         "Program":"../Programs/Ajax/jscall.jpg",
+         "Program2":"../Programs/Ajax/getjson.jpg",
+         "Output":"../Programs/Ajax/output.jpg",
+         "Explain1":"Ajax is a Call that is used to link with Json file which has data we want to Use in website , we can do that by using ajax syntax as given in the <b>Figure 3.1</b><br> Here the <b>url</b> can be link or Path of the Json file in Directory <br> , the <b>data</b> is the vairable in which all the data of json will be stored  and <br><b>datatype</b> is set to type Json as we are taking json file for data <br> The function named <b><i>'getData'</i></b> is Executed once we get the Data from the JSON file and this Data can be named anything but is should be passed as parameter in the <i><b>function 'getData'</b></i>",
+          "Explain2":"GetJson is also similar to technique but it is only used when the Json File is Locally available <br> In this Particular case we have taken <i><b>.getJSON('url');</b></i> to get the data from json file and for that we have used Function with parameter name <b>'emp'</b> this parameter stores the data from JSON File ",
+          "Explain3":"Ajax Call is directly accessed by the Browser and has no output bt to check if it is working and Connection is succesfull with the Json file <br> we can use the Above snippet to Run and if we get the data in Console <br> Than we have Succesfully established the Call to JSON",
+          "info":"JSON <b>(JavaScript Object Notation) </b> and AJAX <b>(Asynchronous JavaScript and XML)</b> both somehow anytime depend on Javascript programming language,<br> at least both of them are calling from JavaScript. But characteristics of both JSON vs AJAX are different from each other. <br>JSON is mainly maintained one open standardize open format in text-based data  which is so-called human readable for any kind of data interchange.<br> Whereas AJAX is kind of web programs or can say the group of web programs which mainly used to design the complex or dynamic website <br><h4><i><b> Click on the left Panel to Navigate through the Program,Outputs and Explaination</b></i></h4>"
+        },
+        "Angular":{
+            "name":"Intro to AngularJS",
+            "Advantages":"Angular JS is Two way Data Binding , It proides DOM manipulation also it has certain assets like faster application prototyping , The MVVM architecture and also Faster Development",
+            "Disadvantages":"Javascript support is Mandatory to display and use Angular JS, the device which does not support JS can not acces the Website , Also It has Scopes hierarchically which makes very complex to handle  ",
+            "Program":"../Programs/Angular/index.jpg",
+            "Output":"../Programs/Angular/output.jpg",
+            "Explain1":"Angular Js is very useful to calculate Function on the spot without JS .<br>In the Above Snippet to Run the Angular Functions we need to Import the File <br> Then We created the Form in which we have two Input values of type number Also we have given the <b>ng-model</b> name to both inputs now <br> To use the ng-model name as variable we need to use <b>'{{' ,'}}'</b> we can perfrom any logic inside this Curly braces hence it becomes easy to perform certain functions without any kind of Javascript logic or file ,<br> Here in this case we have given the <b>fname and sname</b>as ng-model by which we can directly fecth the value of the input box  ",
+            "Explain2":"Now as an when the user types the Number in the input boxes the Console takes it as <b>fnum and snum</b> vairable and results the sum in the'h2' tag in <b>Figure 4.2</b>",
+            "info":"Angular JS is Developing and is very famous now a days to perform certain task without Javascript file , For example : to calculate Sumation in HTML , or to Filter the content we can use the Angular JS , it is very easy to bind and manipulate data and has very Simple DOM <br><h4><i><b> Click on the left Panel to Navigate through the Program,Outputs and Explaination</b></i></h4>"
+        }
+}
