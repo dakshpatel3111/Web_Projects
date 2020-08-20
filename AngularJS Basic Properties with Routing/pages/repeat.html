@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/angularmain.css">
+    <title>Angular Repeat</title>
+</head>
+<body>
+    <h1>{{title}}</h1>
+    <h2 class="lead"><b>Below are the Quick Links for Navigation </b></h2>
+    <div>
+        <!--Links to Navigate through Different parts of Topic-->
+       
+          <nav class="btn-group" >
+            <button class="btn btn-info"  ng-click="Showprog()">Program</button>
+            <button class="btn btn-info" ng-click="Showout()">Output</button>
+            <button class="btn btn-info" ng-click="Showexp()">Explaination</button>
+            <button class="btn btn-info " ng-click="Showapps()">Applications</button>
+          </nav>
+
+    </div>
+<br>
+  
+   <div class="grid-cont">
+       <div class="prog" ng-show = "IsVisible"> 
+        <h2>Program</h2>
+        <figure>
+            <img src={{program}} height="150">
+            <figcaption><h3 class="lead">Html Code</h3></figcaption>
+        </figure>
+        <figure>
+            <img src={{program2}} height="200">
+            <figcaption><h3 class="lead">JS Code</h3></figcaption>
+        </figure>
+        </div>
+
+        <div class="exp" ng-show="showe" >
+            <h2>Explaination</h2>
+            <div ng-repeat ="ex in exp">
+            <li class="lead">
+                {{ex}}
+            </li>
+        </div>
+        </div>
+
+        <div class="output" ng-show="showoutput">
+            <h2>Output</h2>
+            <figure>
+                <img src={{output}} height="150">
+                <figcaption><h3 class="lead">Browser Output</h3></figcaption>
+            </figure>
+        </div>
+        
+        <div class="ad" ng-show="showad">
+            <h3>{{heading}}</h2>
+                <div ng-repeat="app in apps">
+            <li class="lead">{{app}}</li>
+        </div>
+        </div>
+    </div>
+    
+    </body>
+</html>

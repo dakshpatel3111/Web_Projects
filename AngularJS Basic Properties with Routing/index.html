@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/angularmain.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script src="angularmain.js"></script>
+    <title>Angular : Assignment 4</title>
+</head>
+<body>
+    <header class="head"><center><h1 class="display-4">Learn Angular JS</h1> <p class="lead">This Webpage is developed using ng-Routing in angular JS by Daksh Patel</p></center></header>
+    <br>
+    
+    <div class="grid-Container" >
+      <center>
+        <!--Links to Navigate through Different Topics-->
+          <nav class="btn-group" >
+            <a class="btn btn-success"  href="#!repeat">Angular Repeat</a>
+            <a class="btn btn-success" href="#!filter">Angular Filter</a>
+            <a class="btn btn-success" href="#!show">Angular Show</a>
+            <a class="btn btn-success" href="#!route" >Angular Routing</a>
+          </nav>
+        </center>
+    </div>
+  <hr>
+
+    <center>
+      <div class="data"></div>
+      <div ng-view></div>
+    </center>
+</body>
+</html>

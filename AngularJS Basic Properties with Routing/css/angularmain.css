@@ -1,0 +1,41 @@
+.head{
+    background-color: cadetblue;
+    color: white;
+    height: 120px;
+}
+.grid-cont{
+ 
+    display: grid;
+  grid-template:
+    'exp prog'
+    ' ad output';
+  grid-gap: 10px;
+  border-collapse: collapse;
+  padding: 20px;
+  grid-template-columns: 50% auto ;
+  background-color:grey;
+}
+
+.exp{
+    grid-area: exp;
+    border: lightblue 3px solid;
+    height: 500px;
+    background-color: whitesmoke;
+}
+.prog{
+    grid-area: prog;
+    border: lightblue 3px solid;
+    background-color: whitesmoke;
+}
+.output{
+    grid-area: output;
+    border: lightblue 3px solid;
+    background-color: whitesmoke;
+    
+}
+.ad{
+    grid-area: ad;
+    border: lightblue 3px solid;
+    background-color: whitesmoke;
+    
+}
